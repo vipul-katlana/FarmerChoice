@@ -1,0 +1,38 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Farmer Choice' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod "SJSwiftSideMenuController"
+  pod 'Alamofire' , '~> 4.9.1'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
+  # Keyboard Helper
+  pod 'IQKeyboardManagerSwift'
+  
+  # Image Downlaod and Caching
+  pod 'Kingfisher', '~> 5.14.1'
+  
+  # Lottie Animation (Loader)
+  pod 'lottie-ios'
+  
+  pod 'SwiftMessages'
+  pod 'OTPFieldView'
+  pod 'FBSDKCoreKit', '~> 8.0.0'
+  pod 'FBSDKLoginKit', '~> 8.0.0'
+  pod 'FBSDKShareKit', '~> 8.0.0'
+ # pod 'FBSDKGamingServiceKit', '~> 8.0.0'
+ pod 'Firebase/Messaging'
+ pod 'Firebase'
+ pod 'Firebase/Core'
+ pod 'Firebase/Database'
+ pod 'Firebase/Auth'
+
+ 
+ pod 'razorpay-pod', '1.2.5'
+ 
+ 
+end

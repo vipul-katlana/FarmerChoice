@@ -1,0 +1,6 @@
+framework module Pods_Farmer_Choice {
+  umbrella header "Pods-Farmer Choice-umbrella.h"
+
+  export *
+  module * { export * }
+}

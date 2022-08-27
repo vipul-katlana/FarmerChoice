@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.otf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.otf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Force Update View Controller-->
+        <scene sceneID="5vZ-O5-zOy">
+            <objects>
+                <viewController storyboardIdentifier="ForceUpdateViewController" id="ai1-we-Gii" customClass="ForceUpdateViewController" customModule="Fresh_Haat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H4J-7H-bUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p6O-dP-2Ni">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMI-ix-Tmw">
+                                <rect key="frame" x="30" y="363.5" width="354" height="169"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="BSM-l2-VEl">
+                                        <rect key="frame" x="157" y="10" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="HPR-i3-ps0"/>
+                                            <constraint firstAttribute="height" constant="40" id="cri-i8-kYp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4Z-Js-uLP">
+                                        <rect key="frame" x="10" y="70" width="334" height="19"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-2s-gWG">
+                                        <rect key="frame" x="87" y="119" width="180" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3R-a7-nqV">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                                                <color key="backgroundColor" name="appGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="DJE-I1-rhL"/>
+                                                    <constraint firstAttribute="width" constant="80" id="NpI-P2-T0b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                                <state key="normal" title="Update">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnUpdateAction:" destination="ai1-we-Gii" eventType="touchUpInside" id="YSQ-8o-Tac"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfW-zg-Txl">
+                                                <rect key="frame" x="100" y="0.0" width="80" height="40"/>
+                                                <color key="backgroundColor" name="appGreenColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7qR-7X-KEr"/>
+                                                    <constraint firstAttribute="width" constant="80" id="aO1-xs-rIs"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnCancelAction:" destination="ai1-we-Gii" eventType="touchUpInside" id="jIK-S7-h7b"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="b4Z-Js-uLP" firstAttribute="top" secondItem="BSM-l2-VEl" secondAttribute="bottom" constant="20" id="0dl-yr-XGL"/>
+                                    <constraint firstAttribute="bottom" secondItem="WfC-2s-gWG" secondAttribute="bottom" constant="10" id="EKk-Gu-ESX"/>
+                                    <constraint firstItem="WfC-2s-gWG" firstAttribute="centerX" secondItem="EMI-ix-Tmw" secondAttribute="centerX" id="JJU-f5-bAw"/>
+                                    <constraint firstItem="b4Z-Js-uLP" firstAttribute="leading" secondItem="EMI-ix-Tmw" secondAttribute="leading" constant="10" id="KJJ-KA-517"/>
+                                    <constraint firstItem="WfC-2s-gWG" firstAttribute="top" secondItem="b4Z-Js-uLP" secondAttribute="bottom" constant="30" id="VYC-QX-GkH"/>
+                                    <constraint firstItem="BSM-l2-VEl" firstAttribute="top" secondItem="EMI-ix-Tmw" secondAttribute="top" constant="10" id="iTG-XA-GqD"/>
+                                    <constraint firstItem="BSM-l2-VEl" firstAttribute="centerX" secondItem="EMI-ix-Tmw" secondAttribute="centerX" id="rKK-QE-cdZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="b4Z-Js-uLP" secondAttribute="trailing" constant="10" id="yeD-yL-Z5R"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Y4-Lm-Mth"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="p6O-dP-2Ni" secondAttribute="bottom" id="Dt1-oa-61v"/>
+                            <constraint firstItem="EMI-ix-Tmw" firstAttribute="centerY" secondItem="H4J-7H-bUZ" secondAttribute="centerY" id="F9F-Xq-8Wq"/>
+                            <constraint firstItem="6Y4-Lm-Mth" firstAttribute="trailing" secondItem="p6O-dP-2Ni" secondAttribute="trailing" id="P0q-9E-i54"/>
+                            <constraint firstItem="EMI-ix-Tmw" firstAttribute="centerX" secondItem="H4J-7H-bUZ" secondAttribute="centerX" id="fXq-Zk-ZMk"/>
+                            <constraint firstItem="p6O-dP-2Ni" firstAttribute="top" secondItem="H4J-7H-bUZ" secondAttribute="top" id="hxQ-H7-fEW"/>
+                            <constraint firstItem="p6O-dP-2Ni" firstAttribute="leading" secondItem="6Y4-Lm-Mth" secondAttribute="leading" id="mNu-Sv-JXK"/>
+                            <constraint firstItem="EMI-ix-Tmw" firstAttribute="leading" secondItem="6Y4-Lm-Mth" secondAttribute="leading" constant="30" id="p5Y-C8-ire"/>
+                            <constraint firstItem="6Y4-Lm-Mth" firstAttribute="trailing" secondItem="EMI-ix-Tmw" secondAttribute="trailing" constant="30" id="zIS-Re-Tjq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="hfW-zg-Txl" id="2uQ-VG-Oxh"/>
+                        <outlet property="lblTitle" destination="b4Z-Js-uLP" id="aSV-Mq-0oa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Eq-0V-PJp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="-195"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_appIcon" width="40" height="40"/>
+        <namedColor name="appGreenColor">
+            <color red="0.066666666666666666" green="0.50980392156862742" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
